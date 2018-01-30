@@ -9,10 +9,16 @@ import { TeamDetailPage } from '../pages';
 })
 export class TeamsPage {
 
+  teams = [
+    {id: 1, name: 'HC Elite'},
+    {id: 2, name: 'Team Takeover'},
+    {id: 3, name: 'DC Thunder'}
+  ];
+
   constructor(public nav: NavController, public navParams: NavParams) {
   }
 
-  itemTapped(){
-    this.nav.push(TeamDetailPage)
+  itemTapped($event, team){
+    this.nav.push(TeamDetailPage, team)
   }
 }
