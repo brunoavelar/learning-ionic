@@ -8,11 +8,13 @@ import { TeamDetailPage, StandingsPage } from '../pages';
   templateUrl: 'team-home.html',
 })
 export class TeamHomePage {
+  team:any;
 
   teamDetailTab = TeamDetailPage;
   standingsTab = StandingsPage;
   
-  constructor(public nav: NavController, public navParams: NavParams) {
+  constructor(public nav:NavController, public navParams:NavParams) {
+    this.team = this.navParams.data;
   }
 
 }
