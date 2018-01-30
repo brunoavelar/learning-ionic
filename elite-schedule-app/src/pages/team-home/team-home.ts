@@ -15,8 +15,4 @@ export class TeamHomePage {
   constructor(public nav: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TeamHomePage');
-  }
-
 }
