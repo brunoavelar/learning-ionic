@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TeamDetailPage, StandingsPage } from '../pages';
+import { MyTeamsPage } from '../my-teams/my-teams';
 
 @IonicPage()
 @Component({
@@ -17,4 +18,8 @@ export class TeamHomePage {
     this.team = this.navParams.data;
   }
 
+  goHome(){
+    //this.nav.push(MyTeamsPage);
+    this.nav.popToRoot();
+  }
 }
